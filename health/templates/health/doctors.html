@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="{% static 'style2.css' %}">
+    
+</head>
+<body>
+     <header>
+          <div class="navbar">
+              <div class="logo">
+                  <img src="{% static 'image/logo.png' %}" alt="Medcare Logo">
+                  <span>MEDCARE</span>
+                  <small>HEALTH SOLUTION</small>
+              </div>
+              <nav>
+                  <ul>
+                    <li><a href="{% url 'home'%}">HOME</a></li>
+                    <li><a href="{% url 'doctors'%}">DOCTORS</a></li>
+                    <li><a href="{% url 'about'%}">ABOUT</a></li>
+                    <li><a href="{% url 'register'%}">REGISTER</a></li>
+                    <li><a href="{% url 'login'%}">LOGIN</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </header>
+      <main>
+        <section class="experience-doctors">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Medcare Experience Doctors</h2>
+                        <p>Land meat winged called subdue without very light in all years sea appear midst forth image him third there set. Land meat winged called subdue without very light in all years sea appear</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="doctor-card">
+                            <img src="{% static 'image/man-lab-coat-with-logo-front_1042554-3582.jpg' %}" alt="Doctor 1" class="img-fluid">
+                            <h3>Dr. John Doe</h3>
+                            <p>Cardiologist</p>
+                            <p class="contact-info">+912723536556</p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="doctor-card">
+                            <img src="{% static 'image/portrait-professional-medical-worker-posing-picture-with-arms-folded.jpg' %}" alt="Doctor 2" class="img-fluid">
+                            <h3>Dr. Jane Smith</h3>
+                            <p>Neurologist</p>
+                            <p class="contact-info">+912336523610</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="doctor-card">
+                            <img src="{% static 'image/doctor-with-his-arms-crossed-white-background_1368-5790.jpg' %}" alt="Doctor 3" class="img-fluid">
+                            <h3>Dr. smith Brown</h3>
+                            <p>Pediatrician</p>
+                            <p class="contact-info">+917235365236</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h5>Top Products</h5>
+                        <ul>
+                            <li>Managed Website</li>
+                            <li>Manage Reputation</li>
+                            <li>Power Tools</li>
+                            <li>Marketing Service</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li>Jobs</li>
+                            <li>Brand Assets</li>
+                            <li>Investor Relations</li>
+                            <li>Terms of Service</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Features</h5>
+                        <ul>
+                            <li>Jobs</li>
+                            <li>Brand Assets</li>
+                            <li>Investor Relations</li>
+                            <li>Terms of Service</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>Resources</h5>
+                        <ul>
+                            <li>Guides</li>
+                            <li>Research</li>
+                            <li>Experts</li>
+                            <li>Agencies</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Newsletter</h5>
+                        <p>You can trust us. We only send promo offers,</p>
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="button" class="btn btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 All rights reserved by <a href="#">sejal dodiya</a></p>
+                <div class="footer-social">
+                    <a href="#"><img src="{% static 'image/facebook.png' %}" alt="Facebook"></a>
+                    <a href="#"><img src="{% static 'image/twitter.png' %}" alt="Twitter"></a>
+                    <a href="#"><img src="{% static 'image/instagram.png' %}" alt="instagram"></a>
+                    <a href="#"><img src="{% static 'image/linkedin.png' %}" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </footer>
+    
+      </main>
+
+</body>
+</html>
+    

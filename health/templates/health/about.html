@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="{% static 'style1.css' %}">
+    
+</head>
+<body>
+     <header>
+          <div class="navbar">
+              <div class="logo">
+                  <img src="{% static 'image/logo.png' %}" alt="Medcare Logo">
+                  <span>MEDCARE</span>
+                  <small>HEALTH SOLUTION</small>
+              </div>
+              <nav>
+                  <ul>
+                    <li><a href="{% url 'home'%}">HOME</a></li>
+                    <li><a href="{% url 'doctors'%}">DOCTORS</a></li>
+                    <li><a href="{% url 'about'%}">ABOUT</a></li>
+                    <li><a href="{% url 'register'%}">REGISTER</a></li>
+                    <li><a href="{% url 'login'%}">LOGIN</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </header>
+        <section class="about-us">
+            <h1>About Us</h1>
+            <p>Welcome to Medcare Health Solution, where we are dedicated to providing exceptional healthcare services to our community. Our hospital has been serving patients for over 20 years with a commitment to excellence and compassion.</p>
+            <h2>Our Mission</h2>
+            <p>Our mission is to improve the health of those we serve with a commitment to excellence in all that we do. We strive to provide comprehensive, high-quality healthcare services to our patients in a compassionate and caring environment.</p>
+            <h2>Our Vision</h2>
+            <p>Our vision is to be the hospital of choice for patients, employees, and physicians by providing innovative and high-quality healthcare solutions that exceed expectations.</p>
+            <h2>Our Values</h2>
+            <ul>
+                <li><strong>Compassion:</strong> We provide patient-centered care with empathy and understanding.</li>
+                <li><strong>Excellence:</strong> We pursue the highest standards in healthcare quality and safety.</li>
+                <li><strong>Integrity:</strong> We uphold the highest ethical standards in all our actions.</li>
+                <li><strong>Collaboration:</strong> We work together as a team to achieve our goals.</li>
+                <li><strong>Innovation:</strong> We embrace change and continuously seek new ways to improve.</li>
+            </ul>
+            <h2>Our History</h2>
+            <p>Founded in 2000, Medcare Health Solution has grown from a small clinic to a comprehensive healthcare facility offering a wide range of services. Our dedicated team of professionals has always been at the forefront of medical innovation, ensuring that we provide the best care possible to our patients.</p>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to learn more about our services, please do not hesitate to contact us at 123.</p>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h5>Top Products</h5>
+                            <ul>
+                                <li>Managed Website</li>
+                                <li>Manage Reputation</li>
+                                <li>Power Tools</li>
+                                <li>Marketing Service</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li>Jobs</li>
+                                <li>Brand Assets</li>
+                                <li>Investor Relations</li>
+                                <li>Terms of Service</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <h5>Features</h5>
+                            <ul>
+                                <li>Jobs</li>
+                                <li>Brand Assets</li>
+                                <li>Investor Relations</li>
+                                <li>Terms of Service</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <h5>Resources</h5>
+                            <ul>
+                                <li>Guides</li>
+                                <li>Research</li>
+                                <li>Experts</li>
+                                <li>Agencies</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h5>Newsletter</h5>
+                            <p>You can trust us. We only send promo offers,</p>
+                            <input type="email" placeholder="Your Email Address">
+                            <button type="button" class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 All rights reserved by <a href="#">sejal dodiya</a></p>
+                    <div class="footer-social">
+                        <a href="#"><img src="{% static 'image/facebook.png' %}" alt="Facebook"></a>
+                        <a href="#"><img src="{% static 'image/twitter.png' %}" alt="Twitter"></a>
+                        <a href="#"><img src="{% static 'image/instagram.png' %}" alt="instagram"></a>
+                        <a href="#"><img src="{% static 'image/linkedin.png' %}" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </footer>
+        
+        </section>
+        
+    
+    
+</body>
+</html>
+    

@@ -1,0 +1,241 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navbar {
+    /* background-color: #333; */
+    overflow: hidden;
+    color:black;
+}
+
+.navbar .logo {
+    float: left;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 14px 20px;
+}
+
+.navbar .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar nav {
+    float: right;
+    color:black;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  
+
+}
+
+.navbar nav ul li {
+    float: left;
+}
+
+.navbar nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    color:black;
+}
+
+.navbar nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.hero {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 50px;
+     background-color: #f5f5f5;
+ }
+ 
+ .hero-text {
+     max-width: 50%;
+ }
+ 
+ .hero-text h1 {
+    margin-top:50%px;
+     font-size: 36px;
+     margin-bottom: 20px;
+ }
+ 
+ .hero-text p {
+     font-size: 25px;
+     color: #555;
+ }
+ hero .hero-text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .hero-text .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.hero .hero-text .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.hero .hero-text .btn-secondary {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+.hero .hero-text .btn-secondary:hover {
+    background-color: black;
+    color: white;
+}
+ 
+.doctors {
+    position: relative;
+    background-size: cover; /* Adjust the size of the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    background: url('../static/image/doctor-nurses-special-equipment.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.doctors .background-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+     background: rgba(0, 0, 0, 0.5); /*Optional: Add a dark overlay */
+}
+
+.doctors .container {
+    position: relative;
+    z-index: 2;
+}
+
+.doctors .text-section {
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background for better readability */
+    border-radius: 10px;
+}
+
+.doctors h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.doctors p {
+    font-size: 1.2em;
+}
+ .background-container {
+    background-image: url('../static/image/medium-shot-scientists-posing-together.jpg');
+    background-size: cover; /* Adjust the size of the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: white; /* Text color */
+    text-align: center;
+    padding: 20px;
+}
+/* Footer */
+.footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    margin-top: 40px;
+    border-top: 1px solid #e7e7e7;
+}
+
+.footer h5 {
+    font-size: 16px;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.footer .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e7e7e7;
+}
+
+.footer .footer-bottom p {
+    margin: 0;
+    color: #6c757d;
+}
+
+.footer .footer-bottom a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer .footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-social {
+    margin-top: 10px;
+}
+
+.footer .footer-social a {
+    margin: 0 10px;
+    color: #6c757d;
+}
+
+.footer .footer-social a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer input[type="email"] {
+    width: calc(100% - 110px);
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #495057;
+}
+
+.footer .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

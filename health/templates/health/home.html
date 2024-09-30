@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="{% static 'style.css' %}">
+    
+</head>
+<body>
+     <header>
+          <div class="navbar">
+              <div class="logo">
+                  <img src="{% static 'image/logo.png' %}" alt="Medcare Logo">
+                  <span>MEDCARE</span>
+                  <small>HEALTH SOLUTION</small>
+              </div>
+              <nav>
+                  <ul>
+                    <li><a href="{% url 'home'%}">HOME</a></li>
+                    <li><a href="{% url 'doctors'%}">DOCTORS</a></li>
+                    <li><a href="{% url 'about'%}">ABOUT</a></li>
+                    <li><a href="{% url 'register'%}">REGISTER</a></li>
+                    <li><a href="{% url 'login'%}">LOGIN</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </header>
+      <main>
+      <section class="hero">
+        <div class="background-container">
+             <div class="hero-text">
+            <h1>Making Health Care Better Together</h1>
+            <p> Also you dry creeping beast multiply fourth abundantly our itself signs bring our. Won form living. Whose dry you seasons divide given gathering great in whose you'll greater let live in form beast synthesize better together these place absolute right.</p>
+            <a href="#" class="btn btn-primary">Make An Appointment</a>
+                <a href="#" class="btn btn-secondary">View Department</a>
+           
+        </div>
+       </div>
+    </section>
+    <section class="doctors">
+        <div class="background-container">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 offset-md-6 text-section">
+                        <h2>Second Abundantly Move That Cattle Perform Appen Land</h2>
+                        <p>Give their their without moving were stars called so divide in female be moving night may fish him. Give their their without moving were stars called so divide female be moving night may fish him own male created great opportunity deal. Give their their without moving were stars called so divide female moving night may fish him own male created great opportunity deal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h5>Top Products</h5>
+                    <ul>
+                        <li>Managed Website</li>
+                        <li>Manage Reputation</li>
+                        <li>Power Tools</li>
+                        <li>Marketing Service</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li>Jobs</li>
+                        <li>Brand Assets</li>
+                        <li>Investor Relations</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Features</h5>
+                    <ul>
+                        <li>Jobs</li>
+                        <li>Brand Assets</li>
+                        <li>Investor Relations</li>
+                        <li>Terms of Service</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li>Guides</li>
+                        <li>Research</li>
+                        <li>Experts</li>
+                        <li>Agencies</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletter</h5>
+                    <p>You can trust us. We only send promo offers,</p>
+                    <input type="email" placeholder="Your Email Address">
+                    <button type="button" class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 All rights reserved by <a href="#">sejal dodiya</a></p>
+            <div class="footer-social">
+                <a href="#"><img src="{% static 'image/facebook.png' %}" alt="Facebook"></a>
+                <a href="#"><img src="{% static 'image/twitter.png' %}" alt="Twitter"></a>
+                <a href="#"><img src="{% static 'image/instagram.png' %}" alt="instagram"></a>
+                <a href="#"><img src="{% static 'image/linkedin.png' %}" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+
+</main>
+</body>
+</html>
+
